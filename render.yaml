@@ -1,22 +1,19 @@
-# Settings for deployment
 services:
-  # Service name should be unique
-  type: web
-  name: chatbot-service
-  env: python
-  branch: main
-  buildCommand: pip install -r requirements.txt
-  startCommand: uvicorn src.main:app --host 0.0.0.0 --port $PORT
-  healthCheckPath: /health
-  autoDeploy: false
-  envVars:
-    - key: GAMMA_API_KEY
-      sync: false
-    - key: OPENAI_API_KEY
-      sync: false
-    - key: HUGGINGFACE_API_KEY
-      sync: false
-    - key: PYTHONUNBUFFERED
-      value: "1"
-    - key: PORT
-      value: "8002"
+  - type: web
+    name: chatbot-service
+    env: python
+    branch: main
+    pythonVersion: 3.10
+    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
+    startCommand: "uvicorn src.main:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /health
+    autoDeploy: false
+    envVars:
+      - key: GAMMA_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: HUGGINGFACE_API_KEY
+        sync: false
+      - key: PYTHONUNBUFFERED
+        value: "1"
