@@ -1,0 +1,61 @@
+# .gitignore for Python project
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local development
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+log/
+
+# Cache directories
+.cache/
+.pytest_cache/
+
+# Model files and data
+models/
+data/
+embeddings/
+*.model
+*.bin
+*.pkl
+
+# Docker
+.docker/
+docker-compose.override.yml

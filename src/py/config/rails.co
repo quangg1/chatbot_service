@@ -1,0 +1,33 @@
+# General flow for the conversation
+define flow
+  user ...
+  bot ...
+
+# Specific flows for handling different user intents
+define flow user asks about product
+  user ask about product
+  $context = execute retrieve_rag_docs(query=$last_user_message)
+  bot inform about product
+
+define flow user asks about price
+  user ask about price
+  $context = execute retrieve_rag_docs(query=$last_user_message)
+  bot inform about price
+
+define flow user asks about health
+  user ask about health
+  $context = execute retrieve_rag_docs(query=$last_user_message)
+  bot inform about health
+
+define flow user expresses greeting
+  user express greeting
+  bot express greeting
+
+define flow user asks non-medical question
+  user ask non-medical question
+  bot refuse non-medical question
+
+# Flow for handling chitchat
+define flow chitchat
+  user chitchat
+  bot chitchat

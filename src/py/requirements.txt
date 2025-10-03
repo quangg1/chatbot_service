@@ -1,0 +1,54 @@
+# Core dependencies
+langchain==0.3.27
+langchain-community==0.3.27
+langchain-core==0.3.76
+
+# NeMo Guardrails
+nemoguardrails==0.7.0
+
+# HuggingFace
+huggingface-hub==0.19.4
+transformers==4.36.2
+openai==1.12.0
+
+# RAG System dependencies
+pymongo==4.6.1
+faiss-cpu==1.7.4
+FlagEmbedding==1.2.5
+numpy==1.24.3
+
+# API and HTTP requests
+requests==2.31.0
+httpx==0.25.2
+
+# Environment and configuration
+python-dotenv==1.0.0
+pydantic==2.5.0
+
+# Async support
+nest-asyncio==1.5.8
+
+# Optional: For better performance
+pandas==2.1.4
+
+# Optional: For logging and monitoring
+loguru==0.7.2
+
+# Optional: For data validation
+jsonschema==4.20.0
+
+# Web UI
+streamlit==1.29.0
+
+# Development dependencies (optional)
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0
+
+# Flask
+Flask
+Flask-Cors
+
+# LangChain memory
+tiktoken
+unstructured

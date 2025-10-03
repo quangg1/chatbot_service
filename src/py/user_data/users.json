@@ -1,0 +1,14 @@
+{
+  "quang": {
+    "password_hash": "d74fe97872d8a425b5263add13d51a1066bf0b2cdd5e368d316dfe31048b2104"
+  },
+  "quang2": {
+    "password_hash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+  },
+  "user1": {
+    "password_hash": "0dec49ff93c6d8f003759c4747db2e00c1f6fc0bc82c0a90edf799197bbcdd95"
+  },
+  "hoang": {
+    "password_hash": "943ae42fcfdd03529f6110e30aa07569b8b46e268377760259eebda34f52a8ca"
+  }
+}

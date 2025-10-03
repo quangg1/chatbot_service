@@ -1,0 +1,22 @@
+# This file defines the prompts used by the rails.
+# The prompts are organized by type.
+
+prompts:
+  - task: self_check_input
+    content: |
+      You are an AI assistant that is an expert in detecting policy violations.
+      Your task is to check if the user's message is malicious or harmful.
+      If the message is malicious or harmful, you should respond with "I'm sorry, I can't respond to that."
+      Otherwise, you should respond with the original message.
+
+      User message: {{ user_message }}
+
+  - task: self_check_output
+    content: |
+      You are an AI assistant that is an expert in detecting policy violations.
+      Your task is to check if the bot's message is malicious or harmful.
+      If the message is malicious or harmful, you should respond with "I'm sorry, I can't respond to that."
+      Otherwise, you should respond with the original message.
+
+      Bot message: {{ bot_message }}
+
